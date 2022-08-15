@@ -102,3 +102,5 @@ select *from BOOK;
 
 
 insert into BORROW values('CS01','BKO1','2021-01-02');
+
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`first`.`BORROW`, CONSTRAINT `BORROW_ibfk_2` FOREIGN KEY (`Book_id`) REFERENCES `BOOK` (`Book_id`))
